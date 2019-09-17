@@ -15,12 +15,28 @@ function CreateLinks (props) {
 }
 
 function CreateSubLinks (props) {
-  debugger
-  return (
-    <div className='sublinks'>
-      Test
-    </div>
-  );
+  const categoryId = props.match.params.id;
+  const category = navLinksData.find(category => category.id.toString() === categoryId);
+  if (!category.subLink) {
+    return null;
+  } else {
+    return (
+      <>
+        {
+          category.subLink.map(sublink => {
+            return (
+              <div className='sub-link'>
+                <div>
+                  <img src={sublink.imageUrl} alt='#' />
+                </div>
+                <p>{sublink.title}</p>
+              </div>
+            );
+          })
+        }
+      </>
+    );
+  }
 }
 
 function App() {

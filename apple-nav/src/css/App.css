@@ -15,3 +15,19 @@
   text-align: center;
   line-height: 45px;
 }
+
+.sub-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-link {
+  flex-shrink: 1;
+  flex-grow: 1;
+  border: 1px solid black;
+  text-align: center;
+}
+
+img {
+  height: 70px;
+}
