@@ -7,7 +7,7 @@ import navLinksData from './data';
 function CreateLinks (props) {
   return (
     <div className='link'>
-      <Link to={`/${props.linkData.title}`.toLowerCase()}>
+      <Link to={`/${props.linkData.id}`}>
         {props.linkData.title}
       </Link>
     </div>
