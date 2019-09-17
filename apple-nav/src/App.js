@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/App.css';
 
 import navLinksData from './data';
@@ -6,7 +7,9 @@ import navLinksData from './data';
 function CreateLinks (props) {
   return (
     <div className='link'>
-      {props.name}
+      <Link to={`/${props.linkData.title}`.toLowerCase()}>
+        {props.linkData.title}
+      </Link>
     </div>
   );
 }
@@ -16,11 +19,11 @@ function App() {
     <div className="App">
       <div className='links'>
         {
-          navLinksData.map(link => <CreateLinks name={link.title} key={link.id} />)
+          navLinksData.map(link => <CreateLinks linkData={link} key={link.id} />)
         }
       </div>
       <div className='sub-links'>
-        
+
       </div>
     </div>
   );
