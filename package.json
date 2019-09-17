@@ -1,0 +1,23 @@
+{
+  "name": "rr2ap3",
+  "version": "1.0.0",
+  "description": "* Lets build out a navigation app that mimics `Apple's Slick Navigation` from their marketing website. At this point you have all the knowledge you'll need to be able to complete this stretch assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaunorpen/React-Router-Apple-Nav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaunorpen/React-Router-Apple-Nav/issues"
+  },
+  "homepage": "https://github.com/shaunorpen/React-Router-Apple-Nav#readme",
+  "dependencies": {
+    "create-react-app": "^3.1.1"
+  }
+}
