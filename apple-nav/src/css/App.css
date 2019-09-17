@@ -1,8 +1,11 @@
+.App {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
 .links {
   display: flex;
   justify-content: space-between;
-  max-width: 80vw;
-  margin: 0 auto;
 }
 
 .link {

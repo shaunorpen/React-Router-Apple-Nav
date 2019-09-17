@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import './css/App.css';
 
 import navLinksData from './data';
@@ -14,6 +14,15 @@ function CreateLinks (props) {
   );
 }
 
+function CreateSubLinks (props) {
+  debugger
+  return (
+    <div className='sublinks'>
+      Test
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +32,7 @@ function App() {
         }
       </div>
       <div className='sub-links'>
-
+        <Route path='/:id' render={props => <CreateSubLinks {...props} />} />
       </div>
     </div>
   );
